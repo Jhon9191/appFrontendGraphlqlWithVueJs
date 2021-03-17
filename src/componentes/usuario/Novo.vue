@@ -85,7 +85,6 @@ export default {
             this.$api.query({
                 query: gql `{perfis {id rotulo}}`
             }).then(result =>{
-                console.log(result)
                 this.perfis = result.data.perfis
                 this.erros = null
             }).catch(e => {
